@@ -1,0 +1,77 @@
+.feature-footer-section {
+  background-color: #eafaf1;
+  padding-bottom: 3rem; /* Adjust padding for better spacing */
+}
+
+.project-icon {
+  text-align: center;
+  padding: 2rem;
+  padding-bottom: 1rem; /* Reduce bottom padding */
+}
+
+.project-icon h1 {
+  font-size: 2.5rem; /* Adjust font size for smaller screens */
+  font-weight: 700;
+}
+
+/* Container for content */
+.feature-footer-section-content {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  align-items: center;
+  padding: 1rem; /* Add padding for better spacing */
+  text-align: center;
+  max-width: 1200px; /* Limit maximum width */
+  margin: 0 auto; /* Center the content */
+}
+
+/* Styling for content items */
+.feature-footer-section-content-items {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start;
+  width: 100%; /* Full width for responsiveness */
+  max-width: 300px; /* Limit maximum width for each item */
+  margin: 1rem 0; /* Add vertical margin */
+  text-align: center; /* Center text */
+}
+
+.feature-footer-section-content-items h1 {
+  font-size: 1.5rem; /* Adjust heading size */
+  margin-bottom: 1rem; /* Add margin for spacing */
+}
+
+.feature-footer-section-content-items p {
+  font-size: 1rem; /* Adjust paragraph size */
+  text-align: justify;
+}
+
+/* Responsive Design */
+
+/* Styles for screens larger than 769px */
+@media (min-width: 769px) {
+  .feature-footer-section-content {
+    flex-direction: row; /* Arrange items horizontally */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Space items evenly */
+  }
+
+  .feature-footer-section-content-items {
+    width: 23%; /* Set width for each item */
+    max-width: none; /* Remove maximum width */
+    margin: 0; /* Remove margin */
+    text-align: left; /* Align text to the left */
+  }
+}
+
+/* Styles for screens 768px and smaller */
+@media (max-width: 768px) {
+  .feature-footer-section-content {
+    flex-direction: column; /* Stack items vertically */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  .feature-footer-section-content-items {
+    width: 100%; /* Full width for each item */
+  }
+}

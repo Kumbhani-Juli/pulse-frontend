@@ -1,0 +1,97 @@
+/* Blog Card Styles */
+.blog-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  margin: 10px; /* Added margin for spacing between cards */
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+}
+
+.blog-card-image {
+  width: 100%;
+  height: auto;
+}
+
+.blog-card-category {
+  font-size: 0.9rem;
+  color: #888;
+  padding: 10px;
+}
+
+.blog-card-title {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.blog-card-description {
+  font-size: 1rem;
+  margin: 10px;
+  color: #555;
+}
+
+.blog-card-read-more {
+  font-size: 1rem;
+  color: #00ad6a;
+  text-decoration: none;
+  margin: 10px;
+  align-self: flex-start;
+}
+
+/* Responsive Styles */
+
+/* Mobile devices (portrait and landscape) */
+@media (max-width: 767px) {
+  .blog-card {
+    margin: 10px 0; /* Reduced margin for smaller screens */
+  }
+
+  .blog-card-category {
+    font-size: 0.8rem; /* Smaller font size for category */
+    padding: 8px; /* Adjusted padding */
+  }
+
+  .blog-card-title {
+    font-size: 1.25rem; /* Smaller title font size */
+    margin: 8px; /* Reduced margin */
+  }
+
+  .blog-card-description {
+    font-size: 0.9rem; /* Smaller description font size */
+    margin: 8px; /* Reduced margin */
+  }
+
+  .blog-card-read-more {
+    font-size: 0.9rem; /* Smaller font size for "Read More" */
+    margin: 8px; /* Reduced margin */
+  }
+}
+
+/* Tablets and small desktops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .blog-card {
+    margin: 15px; /* Adjusted margin for medium-sized screens */
+  }
+
+  .blog-card-category {
+    font-size: 0.85rem; /* Slightly smaller font size */
+  }
+
+  .blog-card-title {
+    font-size: 1.4rem; /* Slightly smaller title font size */
+  }
+
+  .blog-card-description {
+    font-size: 0.95rem; /* Slightly smaller description font size */
+  }
+
+  .blog-card-read-more {
+    font-size: 0.95rem; /* Slightly smaller font size for "Read More" */
+  }
+}

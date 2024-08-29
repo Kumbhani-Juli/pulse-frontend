@@ -1,0 +1,80 @@
+/* Base styles for SignUpForm */
+.sign-up-form {
+  padding: 2rem;
+  max-width: 600px; /* Limit width for larger screens */
+  margin: auto; /* Center form horizontally */
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem; /* Adjusted font size */
+}
+
+.form-group input {
+  width: 100%; /* Full width input fields */
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-btn {
+  background-color: #00ad6a;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem; /* Adjusted font size */
+  width: 100%; /* Full width .signup-btn */
+}
+
+.signup-btn:hover {
+  background-color: #009e55;
+}
+
+/* Responsive styles */
+
+/* Mobile devices (portrait and landscape) */
+@media (max-width: 767px) {
+  .sign-up-form {
+    padding: 1rem; /* Reduced padding for mobile screens */
+  }
+
+  .form-group label {
+    font-size: 0.9rem; /* Smaller font size for labels */
+  }
+
+  .form-group input {
+    padding: 0.5rem; /* Reduced padding for input fields */
+  }
+
+  .signup-btn {
+    padding: 0.5rem; /* Reduced padding for .signup-btn */
+    font-size: 0.9rem; /* Smaller font size for .signup-btn */
+  }
+}
+
+/* Tablets and small desktops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sign-up-form {
+    padding: 1.5rem; /* Adjusted padding for medium-sized screens */
+  }
+
+  .form-group label {
+    font-size: 0.95rem; /* Slightly smaller font size for labels */
+  }
+
+  .form-group input {
+    padding: 0.65rem; /* Adjusted padding for input fields */
+  }
+
+  .signup-btn {
+    padding: 0.65rem; /* Adjusted padding for .signup-btn */
+    font-size: 0.95rem; /* Slightly smaller font size for .signup-btn */
+  }
+}
